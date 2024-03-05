@@ -1,0 +1,73 @@
+body {
+  background-image: url('non2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; /* Выравнивание текста внутри body по центру */
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.desktop-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-menu li {
+  position: relative;
+  padding: 15px;
+  font-size: 28px;
+}
+
+.desktop-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+}
+
+.desktop-menu li:hover .sub-menu {
+  display: block;
+}
+
+/* Media query для мобильной версии */
+
+@media (max-width: 1000px) {
+  body {
+      background-image: url('390.png');
+  }
+
+  .menu {
+      background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+  }
+
+  .desktop-menu {
+      flex-direction: column;
+  }
+
+  .desktop-menu li {
+      padding: 10px;
+      font-size: 39px;
+  }
+
+  .sub-menu {
+      position: static;
+      display: none;
+  }
+}
+
+/* Стили по умолчанию */
+#image {
+  display: block;
+  margin: 0 auto;
+}
+
